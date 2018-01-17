@@ -1,0 +1,21 @@
+{
+  "id": "p3",
+  "imageUrl": "../images/1.jpg",
+  "name": "销售",
+  "companyId": "c3",
+  "companyName": "小米",
+  "cityId": "c1",
+  "cityName": "上海",
+  "scaleId": "s3",
+  "scaleName": "500人以上",
+  "industryId": "i1",
+  "workTime":"全职",
+  "industryName": "互联网",
+  "salaryId": "s2",
+  "salaryName": "5k-8k",
+  "experience": "1-3年",
+  "education": "专科",
+  "benefit": "成长空间大",
+  "description": "岗位职责：\n负责公司全国客户来源的数据收集、挖掘、开拓、分析;",
+  "posted":true
+}

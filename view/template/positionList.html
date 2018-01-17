@@ -1,0 +1,13 @@
+<ul class="posiList">
+  <li ui-sref="position({id:item.id})" ng-repeat="item in data|filterByObj:filterObj" class="item" >
+    <img ng-src="{{item.imageUrl}}" alt="" class="d-id logo f-l" />
+    <div class="detail">
+      <span class="company d-b" ng-bind="item.companyName"></span>
+      <p class="des">
+        <span class="posi-des d-id f-l" ng-bind="item.job+'['+item.cityName+']'"></span>
+          <span class="mon f-r" ng-bind="item.salaryName"></span></p>
+      <p class="time d-b" ng-bind="item.date"></p>
+      <span ng-if="isFavorite" ng-click="$event.stopPropagation();select(item);" class="icon {{item.select?'star-active':'star'}}"></span>
+    </div>
+  </li>
+</ul>

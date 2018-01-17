@@ -1,0 +1,13 @@
+<div class="regesiter">
+  <form action="" name="form">
+  <input class="d-b top" ng-model="user.phone" validator="required,phone" type="tel" placeholder="手机号">
+  <input class="d-b bottom" ng-model="user.password" validator="required,password" type="password" placeholder="设置6-16位密码">
+  <div class="validate">
+    <input class="d-b bottom" validator="required" type="number" placeholder="短信验证码" ng-model="user.code">
+    <span class="mess {{time?'disabled':''}}" ng-click="time?1==1:send();" ng-bind="time?time:'获取'"></span>
+  </div>
+  <button class="b-d te-c rege-btn" validation-submit="form" ng-click="submit();">注册</button>
+  <span>已有账号？</span>
+  <button class="b-d te-c login-btn" ui-sref="login">登录</button>
+  </form>
+</div>

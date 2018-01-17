@@ -1,0 +1,13 @@
+<div app-head-bar text="职位详情"></div>
+<div app-position-info posi="position" is-login="isLogin"></div>
+<div app-company com="company"></div>
+<div class="posiDes">
+  <h5 class="va-m">职位描述</h5>
+  <div class="content">
+    <pre ng-bind="position.description">
+    </pre>
+  </div>
+</div>
+<div class="btn-group">
+<button class="bottom-btn d-id" ng-bind="message" ng-click="go();"></button>
+</div>

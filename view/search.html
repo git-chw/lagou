@@ -1,0 +1,10 @@
+<div class="searchBar te-c">
+  <button type="button" ng-click="name='';search();" name="button" class="">取消</button>
+  <input type="text" ng-model="name" placeholder="搜索职位或公司">
+  <img src="../images/search.png" class="va-m">
+  <button type="button" ng-click="search();">搜索</button>
+</div>
+<div app-tab list="tabList" tab-click="tClick(id,name)"></div>
+<div app-cont data="list" filter-obj="filterObj"></div>
+<div app-foot></div>
+<div app-select visible="selOption.visible" list="selOption.list" sel="sClick(id,name)"></div>

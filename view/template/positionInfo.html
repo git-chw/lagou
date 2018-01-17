@@ -1,0 +1,16 @@
+<div class="posiInfo">
+  <div class="posiTitle">
+    <h5 class="te-l d-id" ng-bind="posi.name"></h5>
+    <p class="favIcon f-r d-id"><img class="favIcon1 d-id" ng-click="favorite()" ng-show="isLogin" ng-src="{{imgPath}}"></p>
+  </div>
+  <div class="posiDetail">
+    <div class="posiContain">
+        <span class="salary item"><em class="icon1"></em><span ng-bind="posi.salaryName"></span></span>
+        <span class="city item te-c"><em class="icon2"></em><span ng-bind="posi.cityName"></span></span>
+        <span class="jobnature item te-r"><em class="icon3"></em><span ng-bind="posi.workTime"></span></span>
+        <span class="workyear item"><em class="icon4"></em><span ng-bind="posi.experience"></span></span>
+        <span class="edu item te-c"><em class="icon5"></em><span ng-bind="posi.education"></span></span>
+    </div>
+    <div class="temptation d-b" ng-bind="'职位诱惑：'+posi.benefit"></div>
+  </div>
+</div>

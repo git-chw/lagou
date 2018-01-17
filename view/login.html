@@ -1,0 +1,9 @@
+<div class="loginIn">
+  <form action="" name="form">
+  <input class="d-b top" ng-model="user.phone" validator="required,phone" type="text" placeholder="已验证手机/邮箱">
+  <input class="d-b bottom" ng-model="user.password" validator="required,password" type="password" placeholder="密码">
+  <button class="b-d te-c login-btn" validation-submit="form" ng-click="submit();">登录</button>
+  <span>还没账号？</span>
+  <button class="b-d te-c rege-btn" ui-sref="regesiter">注册</button>
+  </form>
+</div>

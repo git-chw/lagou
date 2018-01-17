@@ -1,0 +1,18 @@
+<div app-head-bar text="拉勾网"></div>
+<div class="me">
+  <div ng-if="name">
+    <img ng-src="{{image}}" >
+    <div class="username" ng-bind="name"></div>
+    <div>
+      <button type="button" name="button" class="send" ui-sref="post">投递</button>
+      <button type="button" name="button" class="getter" ui-sref="favrite">收藏</button>
+      <button type="button" name="button" class="unLogin" ng-click="logout();">退出登录</button>
+    </div>
+  </div>
+  <div ng-hide="name">
+    <button type="button" name="button" class="login" ui-sref="login">登录或注册</button>
+    <button type="button" name="button" class="send" ui-sref="login">投递</button>
+    <button type="button" name="button" class="getter" ui-sref="login">收藏</button>
+  </div>
+</div>
+<div app-foot></div>

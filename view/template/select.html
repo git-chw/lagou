@@ -1,0 +1,8 @@
+<div class="selOption" ng-show="visible" ng-click="visible=false">
+  <div class="wrap">
+    <ul>
+      <li class="te-c d-b" ng-click="sel(item);" ng-repeat="item in list" ng-bind="item.name"></li>
+    </ul>
+    <button class="te-c" ng-click="visible=false">取消</button>
+  </div>
+</div>
